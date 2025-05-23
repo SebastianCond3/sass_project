@@ -1,5 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 header {
-  background-color: green;
+  background-color: black;
+}
+header .header-items {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+header .header-items div button {
+  background: none;
+  border: none;
+  padding: 2px;
+}
+header .header-items div img {
+  padding: 2px;
+}
+
+main .main-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .main-section .search-domain {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px;
+}
+main .main-section .search-domain form {
+  place-self: center;
+  width: 100%;
+  box-shadow: 0 0 5px black;
+}
+main .main-section .search-domain form input {
+  height: 48px;
+  width: 100%;
+  border-radius: 4px;
+}
+main .main-section .search-domain button {
+  border: none;
+  background: #09757A;
+  border-radius: 5px;
+  padding: 10px;
+  width: auto;
+  height: auto;
+}
+main .main-section .godaddy-airo {
+  display: flex;
+  flex-direction: column;
+}
+main .main-section .godaddy-airo .godaddy-airo-card {
+  display: grid;
+  place-self: center;
+  grid-template-rows: auto auto auto 150px;
+  width: auto;
+  height: 670px;
+  background-image: url("../images/main_img.webp");
+  background-size: cover;
+  background-position: center;
+  margin: 15px;
+  border-radius: 10px;
+}
+main .main-section .godaddy-airo .godaddy-airo-card .airo-title {
+  align-content: center;
+  justify-self: center;
+  text-align: center;
+  grid-row: 2/3;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+main .main-section .godaddy-airo .godaddy-airo-card .airo-button {
+  margin: 20px;
+  padding: 15px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  align-content: center;
+  justify-self: center;
+  justify-items: flex-start;
+  text-align: center;
+  grid-row: 4/5;
+  height: 110px;
+}
+main .main-section .godaddy-airo .godaddy-airo-card .airo-button p {
+  font-size: 10px;
+  background-color: lightsteelblue;
+}
+main .main-section .godaddy-airo .godaddy-airo-card .airo-button button {
+  color: white;
+  background-color: black;
+  font-size: 13px;
+  height: 30px;
+  border-radius: 10px;
+  align-self: center;
+}
+main .domains {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px 0 10px 0;
+}
+main .domains .scroll-menu {
+  overflow-y: auto;
+  white-space: nowrap;
+}
+main .domains .scroll-menu button {
+  display: inline-block;
+  border: none;
+  border-radius: 15px;
+  margin: 5px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  width: auto;
+}
+main .domains .scroll-menu button:hover {
+  background-color: black;
+  color: white;
+}
+main .domains .domains-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .domains .domains-list .domains-link {
+  display: flex;
+  align-items: end;
+  justify-self: center;
+  width: 90%;
+  background-image: url("../images/domain_link.webp");
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  border-radius: 10px;
+  margin: 20px 0 0 0;
+  font-weight: bold;
+  padding: 15px;
+}
+main .domains .domains-list .specific-domain-container {
+  display: flex;
+  margin: 0 15px 0 15px;
+  gap: 10px;
+}
+main .domains .domains-list .specific-domain-container .specific-domain {
+  display: flex;
+  align-items: end;
+  justify-self: center;
+  width: 90%;
+  background-color: lightgray;
+  height: 130px;
+  border-radius: 10px;
+  margin: 20px 0 0 0;
+  font-weight: bold;
+  padding: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */

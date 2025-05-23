@@ -2,6 +2,177 @@ $primary-color: #FFFFFF;
 $primary-card-color: #D8EFEF;
 $button-color: #09757A;
 $base-font: sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 header {
-  background-color: green;
+  background-color: black;
+  .header-items{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 10px;
+      div {
+        button{
+          background: none;
+          border: none;
+          padding: 2px;
+        }
+        img {
+          padding: 2px;
+        }
+      }
+  }
+}
+main {
+  .main-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    //align-items: center;
+    justify-content: center;
+    .search-domain{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 15px;
+      form {
+        place-self: center;
+        width: 100%;
+        box-shadow: 0 0 5px black;
+        input {
+          height: 48px;
+          width: 100%;
+          border-radius: 4px;
+        }
+      }
+      button {
+        border: none;
+        background: $button-color;
+        border-radius: 5px;
+        padding: 10px;
+        width: auto;
+        height: auto;
+      }
+    }
+    .godaddy-airo {
+      display: flex;
+      flex-direction: column;
+      .godaddy-airo-card {
+        display: grid;
+        place-self: center;
+        grid-template-rows: auto auto auto 150px;
+        width: auto;
+        height: 670px;
+        //background-color: $primary-card-color;
+        background-image: url("../images/main_img.webp");
+        background-size: cover;
+        background-position: center;
+        margin: 15px;
+        border-radius: 10px;
+        .airo-title {
+          align-content: center;
+          justify-self: center;
+          text-align: center;
+          grid-row: 2/3;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+        }
+        .airo-button {
+          margin: 20px;
+          padding: 15px;
+          background-color: $primary-color;
+          border-radius: 15px;
+          align-content: center;
+          justify-self: center;
+          justify-items: flex-start;
+          text-align: center;
+          grid-row: 4/5;
+          height: 110px;
+          p {
+            font-size: 10px;
+            background-color: lightsteelblue;
+          }
+          button {
+            color: white;
+            background-color: black;
+            font-size: 13px;
+            height: 30px;
+            border-radius: 10px;
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+  .domains {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+    .scroll-menu {
+      overflow-y: auto;
+      white-space: nowrap;
+      button {
+        display: inline-block;
+        border: none;
+        border-radius: 15px;
+        margin: 5px;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        width: auto;
+      }
+      button:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+    .domains-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .domains-link {
+        display: flex;
+        align-items: end;
+        justify-self: center;
+        width: 90%;
+        background-image: url("../images/domain_link.webp");
+        background-size: cover;
+        background-position: center;
+        //background-color: $primary-card-color;
+        height: 180px;
+        border-radius: 10px;
+        margin: 20px 0 0 0;
+        font-weight: bold;
+        padding: 15px;
+      }
+      .specific-domain-container {
+        display: flex;
+        margin: 0 15px 0 15px;
+        //padding: 15px;
+        gap: 10px;
+        .specific-domain {
+          display: flex;
+          align-items: end;
+          justify-self: center;
+          width: 90%;
+          background-color: lightgray;
+          height: 130px;
+          border-radius: 10px;
+          margin: 20px 0 0 0;
+          font-weight: bold;
+          padding: 15px;
+        }
+      }
+    }
+  }
 }
