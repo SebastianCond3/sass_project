@@ -166,5 +166,53 @@ main .domains .domains-list .specific-domain-container .specific-domain {
   font-weight: bold;
   padding: 15px;
 }
+main .marketing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 10px 0;
+}
+main .marketing .marketing-title {
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 34px;
+}
+main .marketing .scroll-benefits {
+  width: 90%;
+  height: auto;
+  overflow-y: auto;
+}
+main .marketing .scroll-benefits .benefit-card {
+  width: 90%;
+  height: auto;
+  margin: 20px;
+  background-color: #f5f7f8;
+  border-radius: 10px;
+}
+main .marketing .scroll-benefits .benefit-card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px 10px 0 0;
+}
+main .marketing .scroll-benefits .benefit-card h3 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 28px;
+}
+main .marketing .scroll-benefits .benefit-card p {
+  font-size: 20px;
+  line-height: 28px;
+}
+main .marketing button {
+  width: 180px;
+  height: 50px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=main.css.map */
