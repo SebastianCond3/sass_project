@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -179,33 +180,15 @@ main .marketing .marketing-title {
   font-weight: bold;
   line-height: 34px;
 }
-main .marketing .scroll-benefits {
+main .marketing .scroll-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 90%;
   height: auto;
-  overflow-y: auto;
 }
-main .marketing .scroll-benefits .benefit-card {
-  width: 90%;
-  height: auto;
-  margin: 20px;
-  background-color: #f5f7f8;
-  border-radius: 10px;
-}
-main .marketing .scroll-benefits .benefit-card img {
-  width: 100%;
-  height: 180px;
-  border-radius: 10px 10px 0 0;
-}
-main .marketing .scroll-benefits .benefit-card h3 {
-  font-size: 28px;
-  font-weight: bold;
-  line-height: 28px;
-}
-main .marketing .scroll-benefits .benefit-card p {
-  font-size: 20px;
-  line-height: 28px;
-}
-main .marketing button {
+main .marketing .scroll-container button {
   width: 180px;
   height: 50px;
   color: white;
@@ -213,6 +196,34 @@ main .marketing button {
   border: none;
   border-radius: 5px;
   font-weight: bold;
+}
+main .marketing .scroll-container .scroll-benefits {
+  display: flex;
+  overflow-x: auto; /* ← cambio importante */
+  gap: 1rem; /* espacio entre tarjetas */
+  padding: 1rem; /* opcional para márgenes internos */
+  width: 100%;
+}
+main .marketing .scroll-container .scroll-benefits .benefit-card {
+  flex: 0 0 auto; /* ← evita estiramiento y hace scrollable */
+  width: 278px; /* define un ancho fijo */
+  height: auto;
+  border-radius: 10px;
+  background: #D8EFEF;
+  margin: 10px;
+}
+main .marketing .scroll-container .scroll-benefits .benefit-card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px 10px 0 0;
+}
+main .marketing .scroll-container .scroll-benefits .benefit-card h3 {
+  font-size: 26px;
+  font-weight: bold;
+}
+main .marketing .scroll-container .scroll-benefits .benefit-card p {
+  font-size: 20px;
+  line-height: 28px;
 }
 
 /*# sourceMappingURL=main.css.map */
