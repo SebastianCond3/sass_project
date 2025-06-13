@@ -209,7 +209,7 @@ main .marketing .scroll-container .scroll-benefits .benefit-card {
   width: 278px; /* define un ancho fijo */
   height: auto;
   border-radius: 10px;
-  background: #D8EFEF;
+  background: #f5f7f9;
   margin: 10px;
 }
 main .marketing .scroll-container .scroll-benefits .benefit-card img {
