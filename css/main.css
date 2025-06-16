@@ -24,12 +24,16 @@ header .header-items div img {
   padding: 2px;
 }
 
+main section {
+  margin: 30px 0 30px 0;
+}
 main .main-section {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0;
 }
 main .main-section .search-domain {
   display: flex;
@@ -108,7 +112,6 @@ main .domains {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10px 0 10px 0;
 }
 main .domains .scroll-menu {
   overflow-y: auto;
@@ -172,7 +175,6 @@ main .marketing {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px 0 10px 0;
 }
 main .marketing .marketing-title {
   text-align: center;
@@ -212,6 +214,9 @@ main .marketing .scroll-container .scroll-benefits .benefit-card {
   background: #f5f7f9;
   margin: 10px;
 }
+main .marketing .scroll-container .scroll-benefits .benefit-card .text-card-container {
+  padding: 14px;
+}
 main .marketing .scroll-container .scroll-benefits .benefit-card img {
   width: 100%;
   height: 180px;
@@ -224,6 +229,48 @@ main .marketing .scroll-container .scroll-benefits .benefit-card h3 {
 main .marketing .scroll-container .scroll-benefits .benefit-card p {
   font-size: 20px;
   line-height: 28px;
+}
+main .reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .reviews .client-opinion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .reviews .client-opinion .section-phrase {
+  font-size: 38px;
+  font-weight: bold;
+  text-align: center;
+}
+main .reviews .client-opinion .client-opinion-card {
+  width: 90%; /* define un ancho fijo */
+  height: auto;
+  line-height: 28px;
+  border-radius: 10px;
+  background: #f5f7f9;
+  margin: 10px;
+}
+main .reviews .client-opinion .client-opinion-card #opinion-img-card {
+  width: 100%;
+  height: 190px;
+  border-radius: 10px 10px 0 0;
+}
+main .reviews .client-opinion .client-opinion-card .text-card-container {
+  padding: 14px;
+}
+main .reviews .client-opinion .client-opinion-card .icons-container {
+  padding: 10px 14px 40px 14px;
+}
+main .reviews .client-opinion .client-opinion-card .icons-container .icon {
+  background-color: #d8efef;
+  width: 26px;
+  height: 26px;
+  border-radius: 10px;
+  padding: 4px;
 }
 
 /*# sourceMappingURL=main.css.map */
