@@ -230,23 +230,23 @@ main .marketing .scroll-container .scroll-benefits .benefit-card p {
   font-size: 20px;
   line-height: 28px;
 }
-main .reviews {
+main .comments {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main .reviews .client-opinion {
+main .comments .client-opinion {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .reviews .client-opinion .section-phrase {
+main .comments .client-opinion .section-phrase {
   font-size: 38px;
   font-weight: bold;
   text-align: center;
 }
-main .reviews .client-opinion .client-opinion-card {
+main .comments .client-opinion .client-opinion-card {
   width: 90%; /* define un ancho fijo */
   height: auto;
   line-height: 28px;
@@ -254,23 +254,79 @@ main .reviews .client-opinion .client-opinion-card {
   background: #f5f7f9;
   margin: 10px;
 }
-main .reviews .client-opinion .client-opinion-card #opinion-img-card {
+main .comments .client-opinion .client-opinion-card #opinion-img-card {
   width: 100%;
   height: 190px;
   border-radius: 10px 10px 0 0;
 }
-main .reviews .client-opinion .client-opinion-card .text-card-container {
+main .comments .client-opinion .client-opinion-card .text-card-container {
   padding: 14px;
 }
-main .reviews .client-opinion .client-opinion-card .icons-container {
+main .comments .client-opinion .client-opinion-card .icons-container {
   padding: 10px 14px 40px 14px;
 }
-main .reviews .client-opinion .client-opinion-card .icons-container .icon {
+main .comments .client-opinion .client-opinion-card .icons-container p {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0;
+}
+main .comments .client-opinion .client-opinion-card .icons-container .icon {
   background-color: #d8efef;
   width: 26px;
   height: 26px;
   border-radius: 10px;
   padding: 4px;
+}
+main .comments .reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .comments .reviews .reviews-title {
+  text-align: center;
+  font-size: 26px;
+}
+main .comments .reviews .scroll-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: auto;
+}
+main .comments .reviews .scroll-container .scroll-reviews {
+  display: flex;
+  overflow-x: auto; /* ← cambio importante */
+  gap: 1rem; /* espacio entre tarjetas */
+  padding: 1rem; /* opcional para márgenes internos */
+  width: 100%;
+}
+main .comments .reviews .scroll-container .scroll-reviews .review-card {
+  flex: 0 0 auto; /* ← evita estiramiento y hace scrollable */
+  width: 278px; /* define un ancho fijo */
+  height: auto;
+  padding: 14px;
+  border-radius: 10px;
+  background: #f5f7f9;
+  margin: 10px;
+}
+main .comments .reviews .scroll-container .scroll-reviews .review-card .review-title {
+  font-size: 23px;
+  font-weight: bold;
+}
+main .comments .reviews .scroll-container .scroll-reviews .review-card .rating {
+  width: 180px;
+  height: auto;
+  padding: 30px 0;
+}
+main .comments .reviews .scroll-container .scroll-reviews .review-card .rating img {
+  width: 30px;
+  height: 30px;
+}
+main .comments .reviews .scroll-container .scroll-reviews .review-card .text-card-container {
+  padding-bottom: 90px;
+  line-height: 22px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -238,7 +238,7 @@ main {
       }
     }
     }
-  .reviews {
+  .comments {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -269,12 +269,68 @@ main {
         }
         .icons-container {
           padding: 10px 14px 40px 14px;
+          p {
+            display: flex;
+            gap: 15px;
+            margin: 10px 0;
+          }
           .icon {
             background-color: #d8efef;
             width: 26px;
             height: 26px;
             border-radius: 10px;
             padding: 4px;
+          }
+        }
+      }
+    }
+    .reviews {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .reviews-title {
+        text-align: center;
+        font-size: 26px;
+      }
+      .scroll-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        .scroll-reviews {
+          display: flex;
+          overflow-x: auto; /* ← cambio importante */
+          gap: 1rem;         /* espacio entre tarjetas */
+          padding: 1rem;     /* opcional para márgenes internos */
+          width: 100%;
+          .review-card {
+            flex: 0 0 auto; /* ← evita estiramiento y hace scrollable */
+            width: 278px;   /* define un ancho fijo */
+            height: auto;
+            padding: 14px;
+            border-radius: 10px;
+            background: #f5f7f9;
+            margin: 10px;
+            .review-title {
+              font-size: 23px;
+              font-weight: bold;
+            }
+            .rating {
+              width: 180px;
+              height: auto;
+              padding: 30px 0;
+              img {
+                width: 30px;
+                height: 30px;
+              }
+            }
+            .text-card-container {
+              padding-bottom: 90px;
+              line-height: 22px;
+              font-weight: bold;
+            }
           }
         }
       }
