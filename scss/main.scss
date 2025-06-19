@@ -452,3 +452,63 @@ main {
     }
   }
   }
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    .option {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px;
+      color: white;
+      font-weight: bold;
+      width: 80%;
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .logo-footer {
+      align-self: baseline;
+      margin: 20px 0 20px 26px;
+    }
+  }
+  .social-media {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-self: center;
+    width: 80%;
+    border-top: 1px solid #d4dbe0;
+    padding: 20px;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .rights {
+    display: grid;
+    place-items: center;
+    color: white;
+    padding: 10px;
+    border-top: 1px solid #d4dbe0;
+    .terms {
+      display: flex;
+      gap: 26px;
+    }
+    .copyright {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 15px;
+      gap: 20PX;
+    }
+  }
+}
