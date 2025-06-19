@@ -345,5 +345,97 @@ main .comments .rating-company p {
   font-size: 16px;
   font-weight: bold;
 }
+main .guide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .guide .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 240px;
+  background-image: url("../images/info_img1.webp");
+  background-size: cover;
+  background-position: center;
+}
+main .guide .info-phone-width {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 30px 0;
+}
+main .guide .info-phone-width h3 {
+  font-size: 38px;
+}
+main .guide .info-phone-width p {
+  font-size: 20px;
+  line-height: 30px;
+}
+main .guide .info-phone-width #trust-text {
+  line-height: normal;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+main .guide .info-phone-width button {
+  width: 180px;
+  height: 50px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+main .guide .questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .guide .questions .questions-title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+main .guide .questions .question-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: auto;
+}
+main .guide .questions .question-container .question-card {
+  display: flex;
+  gap: 3px;
+  width: 90%;
+  height: auto;
+  border-top: solid 1px #d4dbe0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 20px 0;
+}
+main .guide .questions .question-container .question-card img {
+  width: 30px;
+  height: 30px;
+}
+main .guide .questions .privacy-politics {
+  width: 90%;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+main .guide .questions .privacy-politics a {
+  color: black;
+}
+main .guide .questions .privacy-politics p {
+  margin: 15px 0;
+}
 
 /*# sourceMappingURL=main.css.map */
