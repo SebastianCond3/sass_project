@@ -288,6 +288,8 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 90%;
+      height: auto;
       .reviews-title {
         text-align: center;
         font-size: 26px;
@@ -297,7 +299,7 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 100%;
         height: auto;
         .scroll-reviews {
           display: flex;
@@ -306,6 +308,8 @@ main {
           padding: 1rem;     /* opcional para márgenes internos */
           width: 100%;
           .review-card {
+            display: grid;
+            grid-template-rows: auto auto 2fr auto;
             flex: 0 0 auto; /* ← evita estiramiento y hace scrollable */
             width: 278px;   /* define un ancho fijo */
             height: auto;
@@ -314,25 +318,40 @@ main {
             background: #f5f7f9;
             margin: 10px;
             .review-title {
-              font-size: 23px;
+              font-size: 20px;
               font-weight: bold;
             }
             .rating {
               width: 180px;
               height: auto;
-              padding: 30px 0;
+              padding: 15px 0;
               img {
-                width: 30px;
-                height: 30px;
+                width: 25px;
+                height: 25px;
               }
             }
             .text-card-container {
-              padding-bottom: 90px;
+              padding-bottom: 45px;
+              padding-top: 15px;
               line-height: 22px;
               font-weight: bold;
             }
           }
         }
+      }
+    }
+    .rating-company {
+      width: 90%;
+      height: auto;
+      .rating {
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+      p {
+        font-size: 16px;
+        font-weight: bold;
       }
     }
   }
